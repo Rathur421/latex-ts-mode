@@ -1,0 +1,32 @@
+A super basic =latex-ts-mode= implementation with syntax highlighting shamelessly taken from nvim people!
+
+#+begin_quote
+*Disclaimer*:
+
+⚠️ I mainly wanted to try how to do a tree-sitter major mode and that's why this repo exist.
+I'm not sure if I will be able to maintain it reliably and for know it's really super basic.
+
+/As such I'll provide the bare minimum of information to make it work for those who want to try and/or improve it/
+#+end_quote
+
+* Install the tree-sitter library
+
+1. Clone the repo at [[https://github.com/latex-lsp/tree-sitter-latex/tree/master]]
+2. src_sh{tree-sitter generate}
+3. compile it using src_sh{gcc}
+4. move the generated library (.so) to your emacs variable =treesit-extra-load-path= directory
+
+
+* Install the package
+Clone the repo and load it using use-package as usual
+
+Once in a =latex= file use =latex-ts-mode=
+
+* What I would like to do
+1. [X] syntax highlighting
+2. [X] indentation based on treesit
+3. [ ] extend eglot for [[https://github.com/latex-lsp/texlab][texlab]] <- if you have any idea how to do it let me know pls!
+   1. [ ] maybe as a separate package?
+   2. [ ] make basic configuration for [[https://tectonic-typesetting.github.io/en-US/][tectonic]]
+4. [ ] instant latex preview using org-latex preview (could be done fast as we can use the tree-sitter parser?)
+   1. [ ] maybe as a separate package?
