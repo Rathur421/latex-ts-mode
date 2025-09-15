@@ -14,7 +14,7 @@
 (require 'font-latex)
 (require 'treesit)
 
-(define-derived-mode latex-ts-mode latex-mode "latex[ts]"
+(define-derived-mode latex-ts-mode LaTeX-mode "latex[ts]"
   "Major mode for editing LaTeX files powered by tree-sitter"
   :syntax-table latex-mode-syntax-table
   (setq-local font-lock-defaults nil)
