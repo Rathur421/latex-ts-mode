@@ -271,7 +271,7 @@
 
      (citation
       command: _ @font-lock-keyword-face
-      keys: (curly_group_text_list) @font-lock-type-face)
+      keys: (curly_group_text_list (_) @font-lock-type-face))
 
      ;; TODO
      ;; ((hyperlink
